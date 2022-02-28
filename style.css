@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgreen
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    font-family: font-family:'Pacifico', cursive;
+}
+
+.image{
+    height: 5%;
+    width: 5%
+    border-radius: 50%;
+}
+
+.paragraph{
+    background-color: white;
+    font-size: 20px;
+    margin: 50px;
+    padding: 30px;
+    border: 3px solid aliceblue;
+}
+
+.copyright{
+    background-color: teal;
+    padding: 15px;
+}
+
+span{
+    margin: 2px; display: inline;
+}
+
+
