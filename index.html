@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
     <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>KANZU FORM</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
+    <body background="./project4.jpg">
         <div class="container">
             <div class="image"> 
               <img src="./KanzuCode logo.png" alt="KanzuCode logo">
@@ -20,77 +23,86 @@
 
     <body>
         <div class="paragraph">
-            <form>
+            <form class="survey form">
                 <!--Name input-->
-                <label for="Name">
-                    Name:
-                </label>
-
-                <input type="Name" id="Name">
-
+                <div class="form-group">
+                    <label for="Name">
+                        Name:
+                    </label>
+                    <input type="Name" id="Name" placeholder="Enter your name" required/>
+                </div>
+                
                 <br>
-                <br>
-
+                
                 <!--Email input-->
-                <label for="Email">
-                    Email:
-                </label>
-
-                <input type="Email" id="Email">
-
+                <div class="form-group">
+                    <label for="Email">
+                        Email:
+                    </label>
+                    <input type="Email" id="Email" placeholder="Enter your email" required/>
+    
+                </div>
+                
                 <br>
-                <br>
-
+                
                 <!--Age input-->
-                <label for="Age(Optional)">
-                    Age(Optional):
-                </label>
-
-                <input type="Age" id="Age">
-
+                <div class="form-group">
+                    <label for="Age (optional)">
+                        Age(Optional):
+                    </label>
+    
+                    <input type="Age" id="Age" placeholder="Enter your age" min="12" max="35"/>
+                </div>
+                
                 <br>
-                <br>
-
+                
                 <!--Contact info-->
-                <label for="Phone number">
-                    Phone-number:
-                </label>
-
-                <input type="phone" id="phone">
-
-                <br>
+                <div class="form-group">
+                    <label for="Phone number">
+                        Phone-number:
+                    </label>
+    
+                    <input type="phone" id="phone" placeholder="Enter your phone-number">
+                </div>
+                
                 <br>
 
                 <!--Gender input-->
-                <label for="Gender">
-                    Gender:
-                </label>
-                <select name="Gender" id="Gender">
-                    <option value="Female"> Female</option>
-                    <option value="Male"> Male</option>
-                </select>
-
-                <br>
+                <div class="form-group">
+                    <label for="Gender">
+                        Gender:
+                    </label>
+                    <select name="Gender" id="Gender">
+                        <option value="Female"> Female</option>
+                        <option value="Male"> Male</option>
+                    </select>
+                </div>
+                
                 <br>
 
                 <!--Graduate info-->
-                <p>Are you a recent graduate?</p>
+                <div class="form-group" id="radio-buttons">
+                    <p>Are you a recent graduate?</p>
 
                 <br>
-                <input type="radio" id="value1" name="hangout">
-                <label for="value1"> Yes</label>
+                <label>
+                    <input type="radio" name="Yes" value="Yes"/>
+                    Yes
+                </label>
 
                 <br>
-                <br>
-
-                <input type="radio" id="value2" name="hangout">
-                <label for="value2"> No</label>
-
-                <br>
+                <label>
+                    <input type="radio" name="No" value="No"/>
+                    No
+                
+                </div>
+                
                 <br>
 
                 <!--Checkbox info-->
-                <p>How did you get to know about this program?</p>
+                <div class="form-group" id="checkboxes">
+                    <p>How did you get to know about this program?</p>
+                    <span>(check all that apply)</span>
                 
                 <br>
                 
@@ -98,42 +110,47 @@
                 <label for="value1"> Through a friend</label>
 
                 <br>
-                <br>
+                
 
                 <input type="checkbox" id="value2">
                 <label for="value2"> The organisation's website</label>
 
                 <br>
-                <br>
+                
 
                 <input type="checkbox" id="value3">
                 <label for="value3"> Others</label>
 
+                </div>
+                
                 <br>
-                <br>
+                
 
                 <!--Text info-->
-                <p>If 'others', please specify:</p>
+                <div class="form-group">
+                    <p>If 'others', please specify:</p>
 
-                <textarea name="Others" id="others">
-                    Type others
+                <textarea name="Others" id="others" placeholder="Type others">
                 </textarea>
-
-                <br>
+                </div>
+                
                 <br>
 
                 <!--Comment input-->
-                <p>What are your goals and expectations once you take on this program?</p>
+                <div class="form-group">
+                    What are your goals and expectations once you take on this program?</p>
 
-                <textarea name="Comments" id="Comments">
-                    Type something...
+                <textarea name="Comments" id="Comments" placeholder="Enter your goals and expectations">
                 </textarea>
-
+                </div>
+                
                 <br>
-                <br>
-
+            
                 <!--Button element-->
-                <button>Submit</button>
+                <div class="form-group">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+                
 
             </form>
 
