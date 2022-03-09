@@ -128,7 +128,7 @@ input{
 #submit{
     padding: 0.7rem;
     font-size: 1.5rem;
-    color: black;
+    color: rgba(29, 27, 27, 0.932);
     font-weight: bolder;
     background-color: aquamarine;
     border-radius: 0.3rem;
@@ -139,4 +139,5 @@ input{
 
 .copyright{
     text-align: center;
+    text-decoration-color: white;
 }
